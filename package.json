@@ -1,0 +1,46 @@
+{
+  "name": "gatsby-monorepo-lerna",
+  "description": "Lerna monorepo starter",
+  "version": "1.0.0",
+  "author": "kpcn <channyein.k@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-react-next": "^1.0.11",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-json": "^1.0.20",
+    "react": "16.4.2",
+    "react-helmet": "^5.2.0",
+    "serve": "^10.0.0",
+    "styled-components": "^3.3.3"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "run:blog": "cd packages/blog && yarn develop",
+    "run:shop": "cd packages/shop && yarn develop",
+    "run:all": "npm-run-all --parallel run:blog run:shop",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "test": "jest test --config ./json-config.json"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/preset-react": "^7.0.0-rc.1",
+    "babel-jest": "^23.4.2",
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "lerna": "^3.22.0"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kpcn/gatsby-monorepo-lerna"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@lerna-monorepo/shared-ui",
+  "description": "Lerna monorepo starter",
+  "version": "1.0.2",
+  "dependencies": {
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-react-next": "^1.0.11",
+    "npm-run-all": "^4.1.5",
+    "react": "16.4.2",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^3.3.3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
